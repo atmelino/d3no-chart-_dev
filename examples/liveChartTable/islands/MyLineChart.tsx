@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "preact/hooks";
 import { LineChartDynamic } from "https://raw.githubusercontent.com/atmelino/d3no-data/livechart/charts.ts"
 // import { LineChartDynamic } from "../../../../../../../d3no-data/charts.ts";
-import { DataTable } from "https://deno.land/x/datatable@v0.0.4-alpha/mod.ts";
+// import { DataTable } from "https://deno.land/x/datatable@v0.0.4-alpha/mod.ts";
+import { DataTable } from "../../../../DataTable_dev/mod.ts";
 import { format } from "https://deno.land/std@0.91.0/datetime/mod.ts";
 
 export default function MyLineChart() {
@@ -84,6 +85,7 @@ export default function MyLineChart() {
         </LineChartDynamic>
         <DataTable
           dataArray={formattedData}
+          rowsPerPage={5}
         />
       </div>
     </>
