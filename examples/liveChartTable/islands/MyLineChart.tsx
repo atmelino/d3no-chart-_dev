@@ -14,13 +14,14 @@ export default function MyLineChart() {
       data: [{ x: Date.now(), y: 10 }],
     },
   ]);
-  const formattedData1 = useRef([{ Time: format(new Date(timems.current), "yyyy-MM-dd HH:mm:ss"), y: 10 }],);
+  const formattedData1 = useRef([{ Nr: 1, Time: format(new Date(timems.current), "yyyy-MM-dd HH:mm:ss"), y: 10 }],);
   const [datasets, setData] = useState(datasets1.current);
   const [formattedData, setformattedData] = useState(formattedData1.current);
   const updateTriggerRef = useRef(0);
   const [updateTrigger, setupdateTrigger] = useState(0);
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(25);
+  const counter = useRef(1);
 
   // used for example purposes
   function getRandomIntInclusive(min: number, max: number) {
@@ -42,7 +43,9 @@ export default function MyLineChart() {
       y: value,
     });
 
+    counter.current=counter.current+1;
     formattedData1.current.push({
+      Nr: counter.current,
       Time: format(new Date(timems.current), "yyyy-MM-dd HH:mm:ss"),
       y: value,
     });
