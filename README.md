@@ -1,6 +1,18 @@
 ## d3no-chart
 
-d3no-chart is a fork of d3no-data
+d3no-chart is a fork of d3no-data. It adds the functionality of live updating a line chart.
+
+**d3n0-chart** on deno.land:
+  <a href="https://deno.land/x/d3no-chart">
+    deno.land
+  </a>
+
+
+
+
+
+
+
 
 **D3NO DATA** on github:
   <a href="https://github.com/oslabs-beta/d3no-data">
