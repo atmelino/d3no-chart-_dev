@@ -23,7 +23,7 @@ d3no-chart is a fork of d3no-data. It adds the functionality of a line chart wit
 </p>
 
 **d3n0-chart** on deno.land:
-  <a href="https://deno.land/x/d3no-chart">
+  <a href="https://deno.land/x/d3nochart">
     deno.land
   </a>
 
