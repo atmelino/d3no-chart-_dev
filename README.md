@@ -1,6 +1,6 @@
-## d3no-chart
+## d3nochart
 
-d3no-chart is a fork of d3no-data. It adds the functionality of a line chart with live updates.
+d3nochart is a fork of d3no-data. It adds the functionality of a line chart with live updates.
 
 ## Examples
 
@@ -22,7 +22,7 @@ d3no-chart is a fork of d3no-data. It adds the functionality of a line chart wit
 
 </p>
 
-**d3n0-chart** on deno.land:
+**d3n0chart** on deno.land:
   <a href="https://deno.land/x/d3nochart">
     deno.land
   </a>
